@@ -19,12 +19,12 @@ let data2 = [
 
 class Thead extends React.Component {
   render() {
-    let headers = Object.keys(this.props.data[0]);
+    let heads = Object.keys(this.props.data[0]);
     return (
       <thead>
         <tr>
           {
-            headers.map(function(prop, index) {
+            heads.map(function(prop, index) {
             return (<th key={index}>{prop}</th>);
           })
           }
@@ -36,11 +36,11 @@ class Thead extends React.Component {
 
 class Tbody extends React.Component {
   render() {
-    let objs = this.props.data;
+    let info = this.props.data;
     return (
       <tbody>
         {
-          objs.map(function(row, index) {
+          info.map(function(row, index) {
             return (<tr key={index}>{
               Object.keys(row).map(function(cell, index) {
               return (<td key={index}>{row[cell]}</td>);
