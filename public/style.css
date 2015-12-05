@@ -1,1 +1,19 @@
-.green { color: green; }
+html {
+  color: #7F00FF;
+  background-color: #FFFFAA;
+  text-align: center;
+}
+
+h1 {
+  text-decoration: underline;
+}
+
+table, th, td {
+  text-align: center;
+  border: 1px solid #090909;
+}
+
+table {
+  margin: 25px auto 0 auto;
+  min-width: 300px;
+}

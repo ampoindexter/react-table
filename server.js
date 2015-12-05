@@ -1,7 +1,12 @@
-var express = require("express");
+'use strict';
 
-var app = express();
+let express = require('express');
+
+let PORT = process.env.PORT || 3000;
+let app = express();
 
 app.use(express.static('public'));
 
-app.listen(3000);
+app.listen(PORT, () => {
+  console.log('Server listening on port: ', PORT);
+});
